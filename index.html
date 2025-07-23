@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rikso Móviles - Reparación de Celulares</title>
+  <style>
+    :root {
+      --verde: #0f0;
+      --rojo: #c00;
+      --negro: #000;
+      --gris-oscuro: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--negro);
+      color: white;
+      line-height: 1.6;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      padding: 10px;
+      background-color: #111;
+    }
+
+    .carousel img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
+
+    header {
+      background-color: var(--verde);
+      color: var(--negro);
+      text-align: center;
+      padding: 15px 10px;
+    }
+
+    nav {
+      background-color: var(--rojo);
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .hero {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: var(--verde);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 10px;
+      background-color: var(--gris-oscuro);
+    }
+
+    .service {
+      background-color: #333;
+      border: 2px solid var(--verde);
+      border-radius: 10px;
+      margin: 10px;
+      padding: 20px;
+      width: 90%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .service h3 {
+      color: var(--rojo);
+      margin-bottom: 10px;
+    }
+
+    .whatsapp-button {
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: inline-block;
+      border-radius: 30px;
+      margin: 30px auto 10px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc57;
+    }
+
+    footer {
+      background-color: var(--negro);
+      border-top: 2px solid var(--verde);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (min-width: 600px) {
+      .service {
+        width: 45%;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .service {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+    <img src="images/FB_IMG_1574827112879.jpg" alt="Fachada Rikso Móviles">
+    <img src="images/2025-01-312.jpg" alt="Cambio de pantalla iPhone">
+    <img src="images/2025-01-31.jpg" alt="Reparación de circuito interno">
+  </div>
+
+  <header>
+    <h1>Rikso Móviles</h1>
+    <p>Reparación profesional de celulares</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>¿Tu celular tiene fallas?</h2>
+    <p>¡Rikso Móviles lo deja como nuevo!</p>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="service">
+      <h3>Cambio de Pantalla</h3>
+      <p>Pantallas originales y de alta calidad para todas las marcas.</p>
+    </div>
+    <div class="service">
+      <h3>Cambio de Batería</h3>
+      <p>¿Tu batería ya no dura? Te la cambiamos en minutos.</p>
+    </div>
+  </section>
+
+  <div style="text-align:center;">
+    <a class="whatsapp-button" href="https://wa.me/5215512345678" target="_blank">📱 Escríbenos por WhatsApp</a>
+  </div>
+
+  <footer id="contacto">
+    <p>
+      📍 <a href="https://www.google.com/maps/place/Rikso+Moviles,+Jurel,+Justo+Sierra,+24114+Cdad.+del+Carmen,+Camp." target="_blank" style="color:#0f0;">Rikso Móviles, Cdad. del Carmen, Camp.</a>
+    </p>
+    <p>📞 55 1234 5678 | 📧 contacto@riksomoviles.com</p>
+    <p>© 2025 Rikso Móviles</p>
+  </footer>
+
+</body>
+</html>
